@@ -13,15 +13,22 @@ URL:       https://github.com/SeaDve/Kooha
 Source0:   %{forgesource}
 
 BuildRequires:  meson
-BuildRequires:  pipewire-devel
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1) 
 BuildRequires:  pkgconfig(glib-2.0)
-BuildRequires:  pipewire-gstreamer
-BuildRequires:  pkgconfig(xdg-desktop-portal)
+BuildRequires:  pkgconfig(x264)
+BuildRequires:  gstreamer1-devel
+BuildRequires:  gstreamer1-plugins-base-devel
+BuildRequires:  gstreamer1-plugins-ugly-devel
+BuildRequires:  gstreamer1-vaapi-devel
 BuildRequires:  rust-packaging
 BuildRequires:  desktop-file-utils
 BuildRequires:  libappstream-glib
+
+Requires: pipewire
+Requires: pipewire-gstreamer
+Requires: xdg-desktop-portal
+Requires: xdg-desktop-portal-gnome
 
 %description
 Capture your screen in a intuitive and straightforward way without distractions.
