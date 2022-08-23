@@ -1,6 +1,5 @@
 %global         forgeurl https://github.com/SeaDve/Kooha
 %global         uuid io.github.seadve.Kooha
-#%global         tag v2.1.1
 
 Name:      kooha
 Version:   2.1.1
